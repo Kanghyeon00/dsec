@@ -3,6 +3,14 @@ import "./Main.css";
 import Header from "./Header";
 
 const Main = () => {
+
+  useEffect(() => {
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, [images]);
+  
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
