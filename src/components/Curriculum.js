@@ -6,12 +6,14 @@ import { useLocation } from "react-router-dom";
 const Curriculum = () => {
   const location = useLocation();
   const currentPath = location.pathname;
-  const [isActive, setIsActive] = useState(false);
+  const currBg = [
+    `${process.env.PUBLIC_URL + '/img/currBg.png'}`,
+  ];
 
   return (
     <>
       <div className="currContainer">
-        <div className="currBgWrapper">
+        <div className="currBgWrapper" style={{ backgroundImage: `url(${currBg})` }}>
           <Header />
           <div className="currBgTextWrapper">
             <p>Curriculum</p>
