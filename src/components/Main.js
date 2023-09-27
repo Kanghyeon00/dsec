@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./Main.css";
 import Header from "./Header";
-import bgImg1 from "../bgimg/bg1.png";
-import bgImg2 from "../bgimg/bg8.png";
-import bgImg3 from "../bgimg/bg9.png";
 
 const Main = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
-    bgImg1,
-    bgImg2,
-    bgImg3,
+    `${process.env.PUBLIC_URL + '/img/bg1.png'}`,
+    `${process.env.PUBLIC_URL + '/img/bg8.png'}`,
+    `${process.env.PUBLIC_URL + '/img/bg9.png'}`,
     // 추가적인 이미지 경로들을 필요에 따라 배열에 추가합니다.
   ];
 
