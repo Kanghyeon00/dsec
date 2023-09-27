@@ -1,0 +1,42 @@
+.mainBgWrapper {
+    background: url('../bgimg/bg1.png');
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    transition: background-image 2s ease-in-out;
+}
+
+.mainTextWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.mainTextWrapper p:nth-child(1) {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    animation: slideUp 1s ease-in-out;
+}
+
+.mainTextWrapper p:nth-child(2) {
+    font-size: 1.2rem;
+    font-family: 'Pretendard';
+    font-weight: 200;
+    color: #dcdcdc;
+    animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

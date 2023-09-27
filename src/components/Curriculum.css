@@ -1,0 +1,125 @@
+.currContainer {
+    overflow-x: hidden;
+}
+
+.currBgWrapper {
+    background: url('../bgimg/currBg.png');
+    width: 100vw;
+    height: 40vh;
+    align-items: center;
+}
+
+.currBgTextWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.currBgTextWrapper p {
+    animation: slideUp 1s ease-in-out;
+}
+
+.currNavWrapper {
+    width: 100vw;
+    height: 8vh;
+    background-color: #000C7A;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currNavWrapper span {
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.underline {
+    border-bottom: 3px solid #fff;
+  }
+
+.currInfoWrapper {
+    display: flex;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 70vh;
+    justify-content: space-around;
+}
+
+.currInfoBox {
+    background-color: #fff;
+    width: 20%;
+    height: 80%;
+    margin-top: 3%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+    opacity: 0; /* 초기에는 보이지 않게 설정 */
+    animation: fadeIn 2s ease-in-out forwards; /* 1초 동안 서서히 나타나도록 설정 */
+    
+}
+
+.currInfoBox:hover {
+    transform: scale(1.1);
+}
+
+.currInfoTag {
+    border: 1px solid #000C7A;
+    border-radius: 20px;
+    color: #000C7A;
+    width: 50%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    margin-top: 7%;
+}
+
+.currInfoTag:hover {
+    background-color: #000C7A;
+    color: #fff;
+}
+
+.currInfoTitle {
+    color: #000C7A;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.currDate {
+    margin-top: 0;
+    color: #5e5e5e;
+}
+
+.currDesWrapper {
+    width: 80%;
+    height: 55%;
+}
+
+.currJoinButton {
+    width: 30%;
+    height: 7%;
+    background: none;
+    border: 1px solid #000C7A;
+    color: #000C7A;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.currJoinButton:hover {
+    background-color: #000C7A;
+    color: #fff;
+    cursor: pointer;
+}
