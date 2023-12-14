@@ -1,0 +1,105 @@
+.equipmentContainer {
+    background-image: url('../bgimg/BlackBg.png');
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    animation: fadeInBackground 1s ease-in-out forwards;
+    overflow-y: hidden;
+}
+
+.equipmentWrapper {
+    display: flex;
+    margin-top: 3.5%;
+    align-items: center;
+}
+
+.eqTextWrapper {
+    width: 40%;
+    margin-left: 4%;
+}
+
+.eqTextWrapper p:nth-child(1) {
+    color: #dfdfdf;
+    font-size: 1.2rem;
+    animation: slideUp 1s ease-in-out;
+}
+
+.eqTextWrapper p:nth-child(2) {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 1%;
+    animation: slideRight 2s ease-in-out;
+}
+
+.eqTextWrapper p:nth-child(3) {
+    color: #c7c7c7;
+    font-size: 1.1rem;
+    line-height: 27px;
+    animation: slideUp 1s ease-in-out;
+}
+
+.eqContentWrapper {
+    display: flex;
+}
+
+.hapticWrapper p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 20%;
+    margin-bottom: 70%;
+}
+
+.hapticWrapper img {
+    width: 80%;
+}
+
+.hapticWrapper {
+    width: 100%;
+    height: 65vh;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px 0 20px 0;
+    animation: slideDown 1s ease-in-out;
+}
+
+.metaWrapper p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 20%;
+    margin-bottom: 70%;
+}
+
+.metaWrapper img {
+    width: 100%;
+}
+
+.metaWrapper {
+    height: 65vh;
+    background-color: #fff;
+    margin: 0 30px;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px 0 20px 0;
+}
+
+.leapWrapper p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 20%;
+    margin-bottom: 70%;
+}
+
+.leapWrapper img {
+    width: 90%;
+}
+
+.leapWrapper {
+    height: 65vh;
+    background-color: #fff;
+    margin-right: 10%;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px 0 20px 0;
+    animation: slideUp 1s ease-in-out;
+}

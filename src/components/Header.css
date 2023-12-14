@@ -1,6 +1,6 @@
 .headerWrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 2%;
     padding-bottom: 2%;
     align-items: center;
@@ -9,28 +9,43 @@
     height: 100%;
 }
 
+.logoWrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.logoWrapper img:hover {
+    cursor: pointer;
+}
+
 .navWrapper {
     font-size: 1.2rem;
-    margin-right: 7%;
+    width: 100%;
+    text-align: center;
 }
 
 .loginWrapper {
     font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
 }
 
 .navWrapper span {
     margin: 20px;
-}
-
-.navWrapper a {
-    color: #fff;
     transition: 0.4s;
 }
 
-.navWrapper a:hover {
-    color: #c4c4c4
+.navWrapper span:hover {
+    color: #c7c7c7;
+    cursor: pointer;
 }
 
 .loginWrapper span {
     margin: 20px;
+    transition: 0.4s;
+}
+
+.loginWrapper span:hover {
+    color: #c7c7c7;
+    cursor: pointer;
 }

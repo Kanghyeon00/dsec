@@ -1,0 +1,105 @@
+.introContainer {
+    background-image: url('../bgimg/IntroBg.png');
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    opacity: 0;
+    animation: fadeInBackground 1s ease-in-out forwards;
+}
+
+.introWrapper {
+    display: flex;
+}
+
+.introTextWrapper {
+    border-right: 1px solid #fff;
+    width: 46%;
+    height: 100vh;
+    margin-left: 4%;
+    animation: borderSlideDown 2s ease-in-out;
+}
+
+.introTextWrapper p:nth-child(1) {
+    color: #dfdfdf;
+    font-size: 1.2rem;
+    margin-top: 30%;
+    animation: slideUp 1s ease-in-out;
+}
+
+.introTextWrapper p:nth-child(2) {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 1%;
+    animation: slideRight 2s ease-in-out;
+}
+
+.introTextWrapper p:nth-child(3) {
+    color: #c7c7c7;
+    font-size: 1.1rem;
+    line-height: 27px;
+    animation: slideUp 1s ease-in-out;
+}
+
+.introContentsWrapper1 {
+    border-right: 1px solid #fff;
+    margin-left: 4%;
+    width: 21%;
+    height: 100vh;
+    animation: borderSlideDown 1s ease-in-out;
+}
+
+.introContentsWrapper2 {
+    margin-left: 4%;
+    width: 21%;
+}
+
+.introContentsDiv1 {
+    margin-top: 25%;
+    height: 30vh;
+    position: relative;
+}
+
+.introContentsDiv2 {
+    margin-top: 25%;
+    height: 30vh;
+    position: relative;
+}
+
+.introContentsDiv1 p:nth-child(2) {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.introContentsDiv1 p:nth-child(3) {
+    color: #c7c7c7;
+}
+
+.introContentsDiv2 p:nth-child(2) {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.introContentsDiv2 p:nth-child(3) {
+    color: #c7c7c7;
+}
+
+.viewMoreButton {
+    font-size: 1rem;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px 0 10px 0;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    text-align: center;
+}
+
+.viewMoreButton:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}

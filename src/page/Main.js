@@ -1,24 +1,32 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import "./Main.css";
-import Header from "./Header";
+import Header from "../components/Header";
 
 const Main = () => {
+  const images = useMemo(
+    () => [
+      `${process.env.PUBLIC_URL}/img/bg1.png`,
+      `${process.env.PUBLIC_URL}/img/bg8.png`,
+      `${process.env.PUBLIC_URL}/img/bg9.png`,
+      // 필요한 경우 추가 이미지 경로를 배열에 추가합니다.
+    ],
+    []
+  );
 
   useEffect(() => {
-    images.forEach((src) => {
+    const preloadImages = images.map((src) => {
       const img = new Image();
       img.src = src;
+      return img;
     });
-  }, [images]);
-  
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = [
-    `${process.env.PUBLIC_URL + '/img/bg1.png'}`,
-    `${process.env.PUBLIC_URL + '/img/bg8.png'}`,
-    `${process.env.PUBLIC_URL + '/img/bg9.png'}`,
-    // 추가적인 이미지 경로들을 필요에 따라 배열에 추가합니다.
-  ];
+    return () => {
+      // Cleanup 함수에서 필요하다면 이미지 로딩 작업을 정리할 수 있습니다.
+      preloadImages.forEach((img) => img.onload = null);
+    };
+  }, [images]);
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -27,8 +35,8 @@ const Main = () => {
       );
     }, 5000);
 
-    return () => clearInterval(interval); // 컴포넌트가 언마운트될 때 interval을 정리합니다.
-  }, [images.length]);
+    return () => clearInterval(interval);
+  }, [images]);
 
   const currentImage = images[currentImageIndex];
 
