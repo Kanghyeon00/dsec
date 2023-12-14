@@ -3,6 +3,7 @@ import "./App.css";
 import Main from "./page/Main";
 import Introduce from "./page/Introduce";
 import Equipment from "./page/Equipment";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
