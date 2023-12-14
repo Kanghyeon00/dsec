@@ -56,13 +56,13 @@
 
 .introContentsDiv1 {
     margin-top: 25%;
-    height: 30vh;
+    height: 28vh;
     position: relative;
 }
 
 .introContentsDiv2 {
     margin-top: 25%;
-    height: 30vh;
+    height: 28vh;
     position: relative;
 }
 
@@ -93,7 +93,7 @@
     border-radius: 10px 0 10px 0;
     transition: 0.3s;
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     left: 0;
     text-align: center;
 }
