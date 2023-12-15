@@ -5,6 +5,7 @@
     overflow-y: hidden;
     opacity: 0;
     animation: fadeInBackground 1s ease-in-out forwards;
+    background-size: cover;
 }
 
 .introWrapper {
@@ -56,13 +57,13 @@
 
 .introContentsDiv1 {
     margin-top: 25%;
-    height: 28vh;
+    height: 30vh;
     position: relative;
 }
 
 .introContentsDiv2 {
     margin-top: 25%;
-    height: 28vh;
+    height: 30vh;
     position: relative;
 }
 
@@ -89,7 +90,7 @@
     background: none;
     border: 1px solid #fff;
     color: #fff;
-    padding: 10px 20px;
+    padding: 3.5% 10%;
     border-radius: 10px 0 10px 0;
     transition: 0.3s;
     position: absolute;

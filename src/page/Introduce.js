@@ -10,6 +10,10 @@ const Introduce = () => {
     navigate("/equipment");
   };
 
+  const goToCerti = () => {
+    navigate("/certification");
+  };
+
   return (
     <>
       <div className="introContainer">
@@ -31,7 +35,7 @@ const Introduce = () => {
               <img src={`${process.env.PUBLIC_URL}/img/certi.png`} alt="img" />
               <p>다양한 특허 및 인증</p>
               <p>국내외 특허인증</p>
-              <button className="viewMoreButton">VIEW MORE →</button>
+              <button onClick={goToCerti} className="viewMoreButton">VIEW MORE →</button>
             </div>
             <div className="introContentsDiv2">
               <img src={`${process.env.PUBLIC_URL}/img/hand.png`} alt="img" />

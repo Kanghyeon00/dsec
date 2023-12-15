@@ -3,6 +3,8 @@
     height: 100vh;
     position: relative;
     transition: background-image 2s ease-in-out;
+    animation: fadeInBackground 1s ease-in-out forwards;
+    background-size: cover;
 }
 
 .mainTextWrapper {

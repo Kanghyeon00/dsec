@@ -4,6 +4,7 @@ import Main from "./page/Main";
 import Introduce from "./page/Introduce";
 import Equipment from "./page/Equipment";
 import { Analytics } from '@vercel/analytics/react';
+import Certification from "./page/Certification";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/introduce" element={<Introduce />} />
         <Route path="/equipment" element={<Equipment />} />
+        <Route path="/certification" element={<Certification />} />
       </Routes>
       <Analytics />
     </div>
