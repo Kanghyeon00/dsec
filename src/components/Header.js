@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -13,6 +13,10 @@ const Header = () => {
     navigate("/introduce");
   };
 
+  const goToContact = () => {
+    navigate("/contact");
+  };
+
   return (
     <>
       <div className="headerContainer">
@@ -20,17 +24,18 @@ const Header = () => {
           <div className="logoWrapper">
             <img
               src={process.env.PUBLIC_URL + "/img/logo_white.png"}
-              alt="logo image"
+              alt="logoImage"
               onClick={goToMain}
             />
           </div>
           <div className="navWrapper">
-            <span onClick={goToIntroduce}>센터소개</span>
-            <span>콘텐츠</span>
-            <span>문의하기</span>
+            <span onClick={goToIntroduce}>About Us</span>
+            <span>Content</span>
+            <span>Portfolio</span>
+            <span onClick={goToContact}>Contact</span>
           </div>
           <div className="loginWrapper">
-            <span>로그인</span>
+            <span>Login</span>
           </div>
         </div>
       </div>

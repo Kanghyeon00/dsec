@@ -5,6 +5,7 @@
     opacity: 0;
     animation: fadeInBackground 1s ease-in-out forwards;
     overflow-y: hidden;
+    background-size: cover;
 }
 
 .equipmentWrapper {

@@ -1,13 +1,11 @@
 .certificationContainer {
-    background-image: url('../bgimg/BlackBg.png');
+    background-image: url('../bgimg/certiBg.jpg');
     width: 100%;
     height: 100vh;
-    overflow-y: hidden;
+    opacity: 0;
     animation: fadeInBackground 1s ease-in-out forwards;
-}
-
-.certificationWrapper {
-
+    overflow-y: hidden;
+    background-size: cover;
 }
 
 .certiTextWrapper {
@@ -21,7 +19,7 @@
     color: #dfdfdf;
     font-size: 1.2rem;
     animation: slideUp 1s ease-in-out;
-    margin-top: 35%;
+    margin-top: 30%;
 }
 
 .certiTextWrapper p:nth-child(2) {
@@ -43,6 +41,10 @@
     display: flex;
 }
 
+.certificationWrapper a:nth-child(1) {
+    margin-top: 35%;
+}
+
 .certificationWrapper a {
     color: #fff;
     border: 1px solid #fff;
@@ -61,17 +63,19 @@
 }
 
 .certiListWrapper1 {
-    width: 25%;
+    width: 19%;
     text-align: center;
     margin-left: 4%;
     margin-right: 2%;
+    animation: slideUp 1s ease-in-out;
 }
 
 .certiListWrapper2 {
-    width: 25%;
+    width: 19%;
     text-align: center;
     margin-right: 4%;
     margin-left: 2%;
+    animation: slideDown 2s ease-in-out;
 }
 
 .certiList1 {

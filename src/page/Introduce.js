@@ -14,6 +14,10 @@ const Introduce = () => {
     navigate("/certification");
   };
 
+  const goToContact = () => {
+    navigate("/contact");
+  };
+
   return (
     <>
       <div className="introContainer">
@@ -35,7 +39,9 @@ const Introduce = () => {
               <img src={`${process.env.PUBLIC_URL}/img/certi.png`} alt="img" />
               <p>다양한 특허 및 인증</p>
               <p>국내외 특허인증</p>
-              <button onClick={goToCerti} className="viewMoreButton">VIEW MORE →</button>
+              <button onClick={goToCerti} className="viewMoreButton">
+                VIEW MORE →
+              </button>
             </div>
             <div className="introContentsDiv2">
               <img src={`${process.env.PUBLIC_URL}/img/hand.png`} alt="img" />
@@ -45,7 +51,9 @@ const Introduce = () => {
                 <br />
                 파트너쉽 문의
               </p>
-              <button className="viewMoreButton">VIEW MORE →</button>
+              <button onClick={goToContact} className="viewMoreButton">
+                VIEW MORE →
+              </button>
             </div>
           </div>
           <div className="introContentsWrapper2">
@@ -53,7 +61,7 @@ const Introduce = () => {
               <img src={`${process.env.PUBLIC_URL}/img/media.png`} alt="img" />
               <p>다양한 콘텐츠 및 장비</p>
               <p>
-                VR기반 컨텐츠
+                VR기반 콘텐츠
                 <br />
                 립모션, MetaQuest, Vive 등
               </p>
@@ -65,7 +73,7 @@ const Introduce = () => {
               <img src={`${process.env.PUBLIC_URL}/img/code.png`} alt="img" />
               <p>각종 콘텐츠 개발</p>
               <p>
-                메타버스 특수교육 컨텐츠
+                메타버스 특수교육 콘텐츠
                 <br />
                 메타버스 플랫폼 개발
               </p>
