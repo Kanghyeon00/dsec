@@ -62,6 +62,12 @@
     text-align: center;
     border-radius: 20px 0 20px 0;
     animation: slideDown 1s ease-in-out;
+    transition: 0.3s;
+}
+
+.hapticWrapper:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .metaWrapper p {
@@ -82,6 +88,12 @@
     width: 100%;
     text-align: center;
     border-radius: 20px 0 20px 0;
+    transition: 0.3s;
+}
+
+.metaWrapper:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .leapWrapper p {
@@ -103,4 +115,10 @@
     text-align: center;
     border-radius: 20px 0 20px 0;
     animation: slideUp 1s ease-in-out;
+    transition: 0.3s;
+}
+
+.leapWrapper:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }

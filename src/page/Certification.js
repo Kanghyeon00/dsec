@@ -76,7 +76,7 @@ const Certification = () => {
                 }
                 target="_blank"
               >
-                제어보드 및 모션센서 결합 장치 및 결합 방법 특허출원
+                제어보드 및 모션센서 결합 장치 및 결합 방법<br />특허출원.pdf
               </Link>
             </div>
           </div>

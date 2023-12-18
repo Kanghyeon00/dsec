@@ -1,0 +1,60 @@
+.contentContainer {
+    width: 100%;
+    height: 100vh;
+    transition: background-image 3s ease-in-out;
+    animation: fadeInBackground 1s ease-in-out forwards;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.contentContainer .contentFront {
+    width: 50%;
+    height: 100vh;
+}
+
+.contentWrapper {
+    width: 100%;
+    height: 87vh;
+}
+
+.contentTextWrapper {
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    text-align: center;
+    white-space: pre-line;
+    width: 50%;
+    height: 50vh;
+}
+
+.contentTextWrapper p:nth-child(1) {
+    font-size: 2rem;
+    margin-bottom: 10%;
+}
+
+.contentTextWrapper p:nth-child(2) {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.contentTextWrapper p:nth-child(3) {
+    color: #c7c7c7;
+}
+
+.contentButton {
+    background: none;
+    border: 1px solid #fff;
+    padding: 20px 50px;
+    border-radius: 15px 0 15px 0;
+    color: #fff;
+    margin-top: 10%;
+    transition: 0.3s;
+}
+
+.contentButton:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}

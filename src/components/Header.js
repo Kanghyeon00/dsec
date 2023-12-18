@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ isContentPage }) => {
   const navigate = useNavigate();
   
   const goToMain = () => {
@@ -17,9 +17,13 @@ const Header = () => {
     navigate("/contact");
   };
 
+  const goToContent = () => {
+    navigate("/content");
+  };
+
   return (
     <>
-      <div className="headerContainer">
+      <div className={`headerContainer ${isContentPage ? 'contentHeader' : ''}`}>
         <div className="headerWrapper">
           <div className="logoWrapper">
             <img
@@ -30,7 +34,7 @@ const Header = () => {
           </div>
           <div className="navWrapper">
             <span onClick={goToIntroduce}>About Us</span>
-            <span>Content</span>
+            <span onClick={goToContent}>Content</span>
             <span>Portfolio</span>
             <span onClick={goToContact}>Contact</span>
           </div>
