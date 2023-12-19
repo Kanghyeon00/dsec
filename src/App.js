@@ -11,10 +11,6 @@ import Content from "./page/Content";
 function App() {
   return (
     <div className="App">
-
-
-
-
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/introduce" element={<Introduce />} />

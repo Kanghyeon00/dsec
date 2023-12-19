@@ -1,56 +1,46 @@
-.contentContainer {
-    width: 100%;
-    height: 100vh;
-    transition: background-image 3s ease-in-out;
-    animation: fadeInBackground 1s ease-in-out forwards;
-    background-size: cover;
+.contentWrapper {
+    display: flex;
     overflow: hidden;
 }
 
-.contentContainer .contentFront {
+.contentLeft {
     width: 50%;
     height: 100vh;
-}
-
-.contentWrapper {
-    width: 100%;
-    height: 87vh;
+    color: #fff;
 }
 
 .contentTextWrapper {
-    color: #fff;
     position: absolute;
-    top: 25%;
-    left: 0;
     text-align: center;
-    white-space: pre-line;
+    top: 35%;
+    left: 0;
     width: 50%;
     height: 50vh;
 }
 
-.contentTextWrapper p:nth-child(1) {
-    font-size: 2rem;
-    margin-bottom: 10%;
+.contentTextWrapper h2 {
+    font-size: 1.5rem;
+    font-weight: lighter;
 }
 
-.contentTextWrapper p:nth-child(2) {
-    font-size: 3.5rem;
+.contentTextWrapper h1 {
+    font-size: 3rem;
     font-weight: bold;
-    margin-top: 0;
 }
 
-.contentTextWrapper p:nth-child(3) {
+.contentTextWrapper p {
+    font-size: 1.2rem;
     color: #c7c7c7;
 }
 
 .contentButton {
     background: none;
-    border: 1px solid #fff;
-    padding: 20px 50px;
-    border-radius: 15px 0 15px 0;
     color: #fff;
-    margin-top: 10%;
+    border: 1px solid #fff;
+    padding: 20px 40px;
+    border-radius: 15px 0 15px 0;
     transition: 0.3s;
+    margin-top: 2%;
 }
 
 .contentButton:hover {
@@ -58,3 +48,28 @@
     color: #000;
     cursor: pointer;
 }
+
+.contentLeft img {
+    width: 100%;
+    height: 100vh;
+}
+
+.contentRight {
+    width: 50%;
+    height: 100vh;
+}
+
+.contentRight img {
+    width: 100%;
+    height: 100vh;
+}
+
+.contentContainer.transitioning .contentRight img {
+    transition: opacity 1s ease-in-out; /* 트랜지션 효과를 부여할 속성 및 지속 시간 설정 */
+  }
+  
+  .contentContainer .contentRight img {
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+  }
