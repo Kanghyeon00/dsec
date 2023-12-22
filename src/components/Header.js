@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = ({ isContentPage }) => {
   const navigate = useNavigate();
@@ -37,6 +37,14 @@ const Header = ({ isContentPage }) => {
             <span onClick={goToContent}>Content</span>
             <span>Portfolio</span>
             <span onClick={goToContact}>Contact</span>
+            <Link
+                to={
+                  "https://drive.google.com/file/d/1vWwyLTvs6tyKVY2BQE_TeQ6z8WOqoyqb/view?usp=sharing"
+                }
+                target="_blank"
+              >
+            <span>하이텍</span>
+            </Link>
           </div>
           <div className="loginWrapper">
             <span>Login</span>
