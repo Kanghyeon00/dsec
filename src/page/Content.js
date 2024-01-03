@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./Content.css"; // 스타일링을 위한 CSS 파일
 import Header from "../components/Header";
+import { useNavigate } from "react-router-dom";
 
 const Content = () => {
+
+  const navigate = useNavigate();
 
   const goToNursense = () => {
     window.open('https://www.nursense.kr/')
@@ -61,13 +64,34 @@ const Content = () => {
 
   const currentContent = contentData[currentContentIndex];
 
+  const handleWheel = (event) => {
+    // 마우스 휠을 아래로 돌렸을 때 URL을 변경합니다.
+    if (event.deltaY > 0) {
+      navigate('/portfolio'); // 다음 페이지로 이동하도록 설정
+    } else if (event.deltaY < 0) {
+      navigate('/introduce');
+    }
+  };
+
+  useEffect(() => {
+    const handleWheelEvent = (event) => handleWheel(event);
+
+    // 마우스 휠 이벤트에 대한 이벤트 리스너 추가
+    window.addEventListener('wheel', handleWheelEvent);
+
+    // 컴포넌트가 언마운트될 때 이벤트 리스너 제거
+    return () => {
+      window.removeEventListener('wheel', handleWheelEvent);
+    };
+  }, [handleWheel, navigate]);
+
   return (
     <>
       <div className='contentContainer'>
         <Header isContentPage={true} />
         <div className="contentWrapper">
           <div className="contentLeft">
-            <img src={`${process.env.PUBLIC_URL}/img/contentFront.jpg`} alt='img' />
+            <img src={`${process.env.PUBLIC_URL}/img/certiBg.jpg`} alt='img' />
             <div className="contentTextWrapper">
             <h2>{currentContent.title}</h2>
               <h1>{currentContent.subTitle}</h1>
