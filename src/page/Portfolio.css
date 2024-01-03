@@ -1,0 +1,20 @@
+.portfolioContainer {
+    background: url('../bgimg/BlackBg3.png');
+    width: 100%;
+    height: 100vh;
+    animation: fadeInBackground 1s ease-in-out forwards;
+}
+
+.portfolioTextWrapper {
+    border-bottom: 1px solid #fff;
+    width: 41.5%;
+    margin-left: 8.5%;
+    margin-top: 4%;
+
+}
+
+.portfolioTextWrapper h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 1.5%;
+}

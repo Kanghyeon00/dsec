@@ -1,0 +1,20 @@
+.registerWrapper {
+    text-align: center;
+}
+
+.registerLogoWrapper p {
+    color: #fff;
+}
+
+.registerInputWrapper {
+    color: #fff;
+}
+
+.registerInputWrapper input {
+    display: block;
+    margin: auto;
+    background: none;
+    border: 1px solid #fff;
+    width: 25%;
+    height: 4vh;
+}

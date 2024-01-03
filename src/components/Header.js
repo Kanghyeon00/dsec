@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Header = ({ isContentPage }) => {
   const navigate = useNavigate();
@@ -21,6 +21,14 @@ const Header = ({ isContentPage }) => {
     navigate("/content");
   };
 
+  const goToPortfolio = () => {
+    navigate("/portfolio");
+  };
+
+  const goToLogin = () => {
+    navigate("/login");
+  };
+
   return (
     <>
       <div className={`headerContainer ${isContentPage ? 'contentHeader' : ''}`}>
@@ -35,19 +43,11 @@ const Header = ({ isContentPage }) => {
           <div className="navWrapper">
             <span onClick={goToIntroduce}>About Us</span>
             <span onClick={goToContent}>Content</span>
-            <span>Portfolio</span>
+            <span onClick={goToPortfolio}>Portfolio</span>
             <span onClick={goToContact}>Contact</span>
-            <Link
-                to={
-                  "https://drive.google.com/file/d/1vWwyLTvs6tyKVY2BQE_TeQ6z8WOqoyqb/view?usp=sharing"
-                }
-                target="_blank"
-              >
-            <span>하이텍</span>
-            </Link>
           </div>
-          <div className="loginWrapper">
-            <span>Login</span>
+          <div className="loginHeaderWrapper">
+            <span onClick={goToLogin}>Login</span>
           </div>
         </div>
       </div>

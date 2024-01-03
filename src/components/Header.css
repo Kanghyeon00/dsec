@@ -24,7 +24,7 @@
     text-align: center;
 }
 
-.loginWrapper {
+.loginHeaderWrapper {
     font-size: 1.2rem;
     width: 100%;
     text-align: center;
@@ -40,12 +40,12 @@
     cursor: pointer;
 }
 
-.loginWrapper span {
+.loginHeaderWrapper span {
     margin: 20px;
     transition: 0.4s;
 }
 
-.loginWrapper span:hover {
+.loginHeaderWrapper span:hover {
     color: #c7c7c7;
     cursor: pointer;
 }

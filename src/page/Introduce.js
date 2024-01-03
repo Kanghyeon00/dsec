@@ -18,6 +18,10 @@ const Introduce = () => {
     navigate("/contact");
   };
 
+  const goToContent = () => {
+    navigate("/content");
+  };
+
   return (
     <>
       <div className="introContainer">
@@ -77,7 +81,7 @@ const Introduce = () => {
                 <br />
                 메타버스 플랫폼 개발
               </p>
-              <button className="viewMoreButton">VIEW MORE →</button>
+              <button onClick={goToContent} className="viewMoreButton">VIEW MORE →</button>
             </div>
           </div>
         </div>
