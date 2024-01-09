@@ -9,7 +9,7 @@ const Register = () => {
         <Header />
         <div className="registerWrapper">
           <div className="registerLogoWrapper">
-            <img src={`${process.env.PUBLIC_URL}/img/logo_white.png`} />
+            <img src={`${process.env.PUBLIC_URL}/img/dm_logo_white.png`} />
             <p>
               디지털스마트교육센터에 회원가입하여 더 많은 서비스를 경험하세요.
             </p>

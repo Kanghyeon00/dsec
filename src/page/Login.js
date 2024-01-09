@@ -25,7 +25,7 @@ const Login = () => {
             <Header />
             <div className='loginWrapper'>
                 <div className='loginLogoWrapper'>
-                    <img onClick={goToMain} src={`${process.env.PUBLIC_URL}/img/logo_white.png`} alt='img' />
+                    <img onClick={goToMain} src={`${process.env.PUBLIC_URL}/img/dm_logo_white.png`} alt='img' />
                     <p>디지털스마트교육센터에 로그인하여 더 많은 서비스를 경험하세요</p>
                     <div className='loginInputWrapper'>
                         <input name='id' type='text' placeholder='ID' />

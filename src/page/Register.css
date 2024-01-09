@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+.registerLogoWrapper img {
+    width: 10%;
+}
+
 .registerLogoWrapper p {
     color: #fff;
 }

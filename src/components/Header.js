@@ -35,14 +35,14 @@ const Header = ({ isContentPage }) => {
         <div className="headerWrapper">
           <div className="logoWrapper">
             <img
-              src={process.env.PUBLIC_URL + "/img/logo_white.png"}
+              src={process.env.PUBLIC_URL + "/img/dm_logo_white.png"}
               alt="logoImage"
               onClick={goToMain}
             />
           </div>
           <div className="navWrapper">
             <span onClick={goToIntroduce}>About Us</span>
-            <span onClick={goToContent}>Content</span>
+            <span onClick={goToContent}>Business</span>
             <span onClick={goToPortfolio}>Portfolio</span>
             <span onClick={goToContact}>Contact</span>
           </div>

@@ -16,6 +16,7 @@
 }
 
 .loginLogoWrapper img {
+    width: 10%;
     margin-bottom: 2%;
     animation: slideDown 1s ease-in-out forwards;
 }
