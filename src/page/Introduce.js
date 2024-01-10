@@ -30,9 +30,9 @@ const Introduce = () => {
         <div className="introWrapper">
           <div className="introTextWrapper">
             <p>더블엠소셜컴퍼니</p>
-            <p>Digital Smart Education Center</p>
+            <p>DoubleM Social Company</p>
             <p>
-              디지털스마트교육센터는
+              더블엠소셜컴퍼니는
               <br />
               메타버스 플랫폼을 기반으로
               <br />

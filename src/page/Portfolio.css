@@ -3,6 +3,7 @@
     width: 100%;
     height: 100vh;
     animation: fadeInBackground 1s ease-in-out forwards;
+    overflow-y: hidden;
 }
 
 .portfolioTextWrapper {
@@ -17,4 +18,185 @@
     color: #fff;
     font-size: 3rem;
     margin-bottom: 1.5%;
+}
+
+.portfolioContentWrapper {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.portfolioMiddleWrapper {
+    width: 33%;
+    height: 100%;
+}
+
+.nursenseWrapper {
+    position: relative;
+    width: 34%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nursenseWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../bgimg/syringe.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center center;
+    transform: scale(1);
+}
+
+.nursenseWrapper:hover::before {
+    transform: scale(1.2);
+    filter: brightness(0.5);
+}
+
+.siminWrapper {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.siminWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../bgimg/siminLogo.png');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center center;
+    transform: scale(1);
+}
+
+.siminWrapper:hover::before {
+    transform: scale(1.2);
+    filter: brightness(0.5);
+}
+
+.jenanWrapper {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.jenanWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../bgimg/jenanBg.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center center;
+    transform: scale(1);
+}
+
+.jenanWrapper:hover::before {
+    transform: scale(1.2);
+    filter: brightness(0.5);
+}
+
+.fireWrapper {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fireWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../bgimg/fire.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center center;
+    transform: scale(1);
+}
+
+.fireWrapper:hover::before {
+    transform: scale(1.2);
+    filter: brightness(0.5);
+}
+
+.eduWrapper {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.eduWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../bgimg/edu.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center center;
+    transform: scale(1);
+}
+
+.eduWrapper:hover::before {
+    transform: scale(1.2);
+    filter: brightness(0.5);
+}
+
+.portfolioContentWrapper img {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    opacity: 0;
+}
+
+.nursenseWrapper:hover img,
+.siminWrapper:hover img,
+.fireWrapper:hover img,
+.jenanWrapper:hover img,
+.eduWrapper:hover img {
+    opacity: 1;
 }

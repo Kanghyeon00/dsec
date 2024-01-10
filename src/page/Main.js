@@ -47,7 +47,16 @@ const Main = () => {
   return (
     <>
       <div className="mainContainer">
-        <div className="mainBgWrapper" style={{ backgroundImage: `url(${currentImage})` }}>
+        <div className="mainBgWrapper">
+        <div className="backgroundVideo">
+            <video autoPlay loop muted playsInline className="video">
+              <source
+                src={`${process.env.PUBLIC_URL}/video/mainVideo.mp4`}
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
           <Header />
           <div className="mainTextWrapper">
             <p>DoubleM Social Company</p>

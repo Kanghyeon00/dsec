@@ -28,6 +28,7 @@ const Content = () => {
           <div className="contentTitle">
             <p>What do we do?</p>
             <span>메타버스 플랫폼 제작 및 홈페이지 제작</span>
+            <img src={`${process.env.PUBLIC_URL}/img/scroll-ani.gif`} />
           </div>
         </div>
       </div>

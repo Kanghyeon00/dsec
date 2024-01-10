@@ -16,6 +16,11 @@
     animation: slideUp 2s ease-in-out forwards;
 }
 
+.contentTitle img {
+    width: 7%;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
 .backgroundVideo {
     position: fixed;
     top: 0;
@@ -39,7 +44,7 @@
 
 .contentTitle {
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

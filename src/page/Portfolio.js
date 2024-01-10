@@ -12,11 +12,28 @@ const Portfolio = () => {
         <div className='portfolioContainer'>
             <Header />
             <div className='portfolioWrapper'>
-                <div className='portfolioTextWrapper'>
-                    <h1>Portfolio</h1>
-                </div>
+
                 <div className='portfolioContentWrapper'>
-                  
+                  <div className="nursenseWrapper">
+                    <img src={`${process.env.PUBLIC_URL}/img/pfOpen.png`} />
+                  </div>
+                  <div className="portfolioMiddleWrapper">
+                  <div className="siminWrapper">
+                  <img src={`${process.env.PUBLIC_URL}/img/pfOpen.png`} />
+                  <span>asdasd</span>
+                  </div>
+                  <div className="jenanWrapper">
+                  <img src={`${process.env.PUBLIC_URL}/img/pfOpen.png`} />
+                  </div>
+                  </div>
+                  <div className="portfolioMiddleWrapper">
+                  <div className="fireWrapper">
+                  <img src={`${process.env.PUBLIC_URL}/img/pfOpen.png`} />
+                  </div>
+                  <div className="eduWrapper">
+                  <img src={`${process.env.PUBLIC_URL}/img/pfOpen.png`} />
+                  </div>
+                  </div>
                 </div>
             </div>
         </div>
