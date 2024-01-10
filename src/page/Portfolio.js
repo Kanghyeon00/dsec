@@ -20,7 +20,6 @@ const Portfolio = () => {
                   <div className="portfolioMiddleWrapper">
                   <div className="siminWrapper">
                   <img src={`${process.env.PUBLIC_URL}/img/pfOpen.png`} />
-                  <span>asdasd</span>
                   </div>
                   <div className="jenanWrapper">
                   <img src={`${process.env.PUBLIC_URL}/img/pfOpen.png`} />
